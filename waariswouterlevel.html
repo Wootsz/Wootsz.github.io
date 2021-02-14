@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Waar is Wouter?</title>
+        <link rel="stylesheet" href="wiw_style.css">
+        <script src="wiw_script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 onclick="complete_level()">Waar is Wouter?</h1>
+            <h1 id="level_header_text">Level 0</h1>
+        </header>
+
+        <main>
+            <body>
+                <div>
+                    <img id="picture" src="" width="100%" alt="Afbeelding niet gevonden..." usemap="#wouter" onclick="display_coords()"/>
+                    <map name="wouter">
+                        <area id="wouter_area" color="black" shape="poly" onclick="complete_level()" style="color: black;">
+                    </map>
+                </div>
+            </body>
+        </main>
+
+        <footer>
+            Copyright © Chiel van Diepen, Wouter Brozius
+        </footer>
+    </body>
+</html>
