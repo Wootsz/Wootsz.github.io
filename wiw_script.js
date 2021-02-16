@@ -1,4 +1,8 @@
-// ------------------- Init functions -------------------
+/* Sources: 
+*  https://jlocatis.github.io/2017/02/24/build-wheres-waldo.html 
+*  https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/ 
+*/
+/* ------------------- Init functions ------------------- */
 
 window.addEventListener("load", function() {
 	document.getElementsByClassName("waldo")[0].addEventListener("click", checkClickLocation);
@@ -8,7 +12,7 @@ window.onload = function init() {
     complete_level();
 }
 
-// ------------------- Level Selection and Data -------------------
+/* ------------------- Level Selection and Data ------------------- */
 
 var level_index = -1;
 var rectangle = "r";
@@ -118,14 +122,7 @@ function area(x1, y1, x2, y2, x3, y3) {
 } 
   
 
-// function display_coords(event) {
-//     var x = event.pageX - this.offsetLeft;
-//     var y = event.pageY - this.offsetTop;
-//     console.log(x + ", " + (y - 95))
-// }
-
-
-// ------------------- Image Zoom (TODO) -------------------
+/* ------------------- Image Zoom (TODO) ------------------- */
 
 // function zoom(e){
 //     var zoomer = e.currentTarget;
