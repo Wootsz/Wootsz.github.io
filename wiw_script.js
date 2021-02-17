@@ -31,34 +31,34 @@ var lives = 3;
 
 // Note the order of elements in this array determines the order of the levels
 var all_levels = [
-    ["mensen22", rectangle, [782,303,898,410]],
-    ["mensen25", rectangle, [678,434,775,568]],
-    ["mensen2",  rectangle, [913,331,1026,468]],
-    ["mensen19", rectangle, [312,191,434,357]],
-    ["mensen10", rectangle, [912,49,969,137]],
-    ["mensen14", rectangle, [803,763,990,976]],
-    ["mensen27", rectangle, [634,464,719,584]],
-    ["mensen24", rectangle, [834,775,908,847]],
-    ["mensen26", rectangle, [895,424,966,503]],
-    ["mensen15", rectangle, [953,195,1014,272]],
-    ["mensen13", rectangle, [144,466,208,543]],
-    ["mensen9",  rectangle, [648,489,1068,940]],
-    ["mensen1",  rectangle, [1337,325,1418,457]],
-    ["mensen3",  rectangle, [518,417,561,477]],
-    ["mensen16", rectangle, [1490,905,1543,980]],
-    ["mensen23", triangle,  [1795,122,1688,206,1798,255]],
-    ["mensen12", rectangle, [260,412,317,465]],
-    ["mensen17", triangle,  [1715,0,1795,4,1797,93]],
-    ["mensen18", rectangle, [816,269,934,427]],
-    ["mensen7",  rectangle, [898,287,966,344]],
-    ["mensen20", triangle,  [0,1218,92,1348,0,1348]],
-    ["mensen28", rectangle, [1247,205,1290,303]],
-    ["mensen21", rectangle, [1271,2,1333,67]],
-    ["mensen8",  rectangle, [14,94,84,199]],
-    ["mensen6",  rectangle, [1494,558,1542,626]],
-    ["mensen5",  rectangle, [1151,165,1182,195]],
-    ["mensen4",  rectangle, [841,77,854,91]],
-    ["mensen11", rectangle, [838,409,859,431]]
+    ["mensen22", rectangle, [782,303,898,410]],                 // 1
+    ["mensen25", rectangle, [678,434,775,568]],                 // 2
+    ["mensen2",  rectangle, [913,331,1026,468]],                // 3
+    ["mensen19", rectangle, [312,191,434,357]],                 // 4
+    ["mensen10", rectangle, [912,49,969,137]],                  // 5
+    ["mensen14", rectangle, [803,763,990,976]],                 // 6
+    ["mensen27", rectangle, [634,464,719,584]],                 // 7
+    ["mensen24", rectangle, [834,775,908,847]],                 // 8
+    ["mensen26", rectangle, [895,424,966,503]],                 // 9
+    ["mensen15", rectangle, [953,195,1014,272]],                // 10
+    ["mensen13", rectangle, [144,466,208,543]],                 // 11
+    ["mensen9",  rectangle, [648,489,1068,940]],                // 12
+    ["mensen1",  rectangle, [1337,325,1418,457]],               // 13
+    ["mensen3",  rectangle, [518,417,561,477]],                 // 14
+    ["mensen16", rectangle, [1490,905,1543,980]],               // 15
+    ["mensen23", triangle,  [1795,122,1688,206,1798,255]],      // 16
+    ["mensen12", rectangle, [260,412,317,465]],                 // 17
+    ["mensen17", triangle,  [1715,0,1795,4,1797,93]],           // 18
+    ["mensen18", rectangle, [816,269,934,427]],                 // 19
+    ["mensen7",  rectangle, [898,287,966,344]],                 // 20
+    ["mensen20", triangle,  [0,1218,92,1348,0,1348]],           // 21
+    ["mensen28", rectangle, [1247,205,1290,303]],               // 22
+    ["mensen21", rectangle, [1271,2,1333,67]],                  // 23
+    ["mensen8",  rectangle, [14,94,84,199]],                    // 24
+    ["mensen6",  rectangle, [1494,558,1542,626]],               // 25
+    ["mensen5",  rectangle, [1151,165,1182,195]],               // 26
+    ["mensen4",  rectangle, [841,77,854,91]],                   // 27
+    ["mensen11", rectangle, [838,409,859,431]]                  // 28
 ]
 
 function complete_level() {
