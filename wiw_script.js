@@ -1,14 +1,16 @@
-/* Sources: 
-*  https://jlocatis.github.io/2017/02/24/build-wheres-waldo.html 
-*  https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/ 
+/** Sources: 
+*   https://jlocatis.github.io/2017/02/24/build-wheres-waldo.html 
+*   https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/ 
 */
+
 /* ------------------- Init functions ------------------- */
 
 window.addEventListener("load", function() {
-	document.getElementsByClassName("waldo")[0].addEventListener("click", checkClickLocation);
+    document.getElementsByClassName("waldo")[0].addEventListener("click", checkClickLocation);
 })
 
 window.onload = function init() {
+    multiplyNode(document.getElementsByClassName("life")[0], lives, true);
     complete_level();
 }
 
@@ -17,6 +19,15 @@ window.onload = function init() {
 var level_index = -1;
 var rectangle = "r";
 var triangle = "t";
+var lives = 3;
+
+/** 
+ *  Rectangle coordinates:
+ *  [x1, y1, x2, y2], where (x1, y1) is the top-left corner and (x2, y2) the bottom-right corner
+ *  
+ *  Triangle coordinates:
+ *  [x1, y1, x2, y2, x3, y3], where every (xi, yi) is a coordinate of the triangle, for i = 1, 2, 3, so in arbitrary order
+ */
 
 // Note the order of elements in this array determines the order of the levels
 var all_levels = [
@@ -64,11 +75,9 @@ function complete_level() {
 
 function checkClickLocation(event) {
 	var click_event = window.event;
-	var x = click_event.offsetX?(click_event.offsetX):click_event.
-		pageX - document.getElementsByClassName("waldo").offsetLeft;
-	var y = click_event.offsetY?(click_event.offsetY):click_event.
-		pageY - document.getElementsByClassName("waldo").offsetTop;
-    console.log(x + "," + y);
+	var x = click_event.offsetX?(click_event.offsetX):click_event.pageX - document.getElementsByClassName("waldo").offsetLeft;
+	var y = click_event.offsetY?(click_event.offsetY):click_event.pageY - document.getElementsByClassName("waldo").offsetTop;
+    // console.log(x + "," + y);
     
     var current_level = all_levels[level_index];
     var current_shape = current_level[1];
@@ -78,14 +87,18 @@ function checkClickLocation(event) {
         case rectangle: 
             if (isInRectangle(x, y, current_coordinates)) {
                 complete_level();
+            } else {
+                removeLife();
             }
             break;
         case triangle:
             if (isInTriangle(x, y, current_coordinates)) {
                 complete_level();
+            } else {
+                removeLife();
             }
             break;
-        default: complete_level(); 
+        default:
     }
 }
 
@@ -120,16 +133,18 @@ function isInTriangle(x, y, tri) {
 function area(x1, y1, x2, y2, x3, y3) { 
    return Math.abs((x1*(y2-y3) + x2*(y3-y1)+ x3*(y1-y2))/2.0); 
 } 
-  
 
-/* ------------------- Image Zoom (TODO) ------------------- */
+function multiplyNode(node, count, deep) {
+    for (var i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+    }
+}
 
-// function zoom(e){
-//     var zoomer = e.currentTarget;
-//     e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
-//     e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
-//     x = offsetX/zoomer.offsetWidth*100
-//     y = offsetY/zoomer.offsetHeight*100
-//     zoomer.style.backgroundPosition = x + '% ' + y + '%';
-// }
-
+function removeLife() {
+    document.getElementsByClassName("life")[lives - 1].remove();
+    lives -= 1;
+    if (lives <= 0) {
+        document.location.href = "waariswoutergameover.html";
+    }
+}
