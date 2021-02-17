@@ -128,11 +128,13 @@ nav {
 div.section {
     padding-top: 1em;
     padding-bottom: 1em;
+    width: 100%;
 }
 
 /* Block */
 div.block {
     text-align: center;
+    width: 70%;
 }
 
 /* Item */
