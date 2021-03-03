@@ -3,25 +3,47 @@
     <head>
         <title>Wouter Brozius</title>
         <link rel="stylesheet" href="style.css">
+        <script src="./js/scripts.js"></script>
     </head>
     <body>
-        <header>
+        <header id="myheader">
             <nav>
                 <ul class="nav-links">
-                    <li><a class="nav-link" href="./index.html">Home</a></li>
-                    <li><a class="nav-link" href="./education.html">Opleiding</a></li>
-                    <li><a class="nav-link" href="./work.html">Werk</a></li>
-                    <li><a class="nav-link" href="./music.html">Muziek</a></li>
-                    <li><a class="nav-link" href="./contact.html">Contact</a></liclass="nav-links">
+                    <li class="nav-link"><a class="nav-link-link" href="./index.html">
+                        <p class="nl">Home</p>
+                        <p class="en">Home</p>
+                    </a></li>
+                    <li class="nav-link"><a class="nav-link-link" href="./education.html">
+                        <p class="nl">Opleiding</p>
+                        <p class="en">Education</p>
+                    </a></li>
+                    <li class="nav-link"><a class="nav-link-link" href="./work.html">
+                        <p class="nl">Werk</p>
+                        <p class="en">Work</p>
+                    </a></li>
+                    <li class="nav-link"><a class="nav-link-link" href="./music.html">
+                        <p class="nl">Muziek</p>
+                        <p class="en">Music</p>
+                    </a></li>
+                    <li class="nav-link"><a class="nav-link-link" href="./contact.html">
+                        <p class="nl">Contact</p>
+                        <p class="en">Contact</p>
+                    </a></li>
+                    <li class="nav-link" onclick="cycleLanguage()" style="cursor: pointer;">
+                        <p class="nl">NL</p>
+                        <p class="en">EN</p>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <h1>Home</h1>
+            <h1 class="nl">Home</h1>
+            <h1 class="en">Home</h1>
 
             <div class="mainbox">
-                <p>Website van Wouter Brozius</p>
+                <p class="nl">Website van Wouter Brozius</p>
+                <p class="en">Website of Wouter Brozius</p>
             </div>
 
         </main>

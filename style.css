@@ -33,6 +33,10 @@ body {
     animation-delay: 2s;
 }
 
+.nl, .en {
+    display: none;
+}
+
 /******************** Text General *********************/
 
 h1, h2 {
@@ -101,15 +105,15 @@ nav {
     background-color: #a6d0e6;
 }
 
-.nav-link {
-    padding-left: 100%;
-    padding-right: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+.nav-link-link {
     color: rgb(0,0,0);
     text-decoration: none;
+}
+
+.nav-link {
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-size: 20px;
-    background-color: #5AB9EA;
 
     /* No selecting the nav-text: */
     -webkit-touch-callout: none; /* iOS Safari */

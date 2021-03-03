@@ -3,42 +3,90 @@
     <head>
         <title>Wouter Brozius</title>
         <link rel="stylesheet" href="style.css">
+        <script src="./js/scripts.js"></script>
     </head>
     <body>
         <header id="myheader">
             <nav>
                 <ul class="nav-links">
-                    <li><a class="nav-link" href="./index.html">Home</a></li>
-                    <li><a class="nav-link" href="./education.html">Opleiding</a></li>
-                    <li><a class="nav-link" href="./work.html">Werk</a></li>
-                    <li><a class="nav-link" href="./music.html">Muziek</a></li>
-                    <li><a class="nav-link" href="./contact.html">Contact</a></liclass="nav-links">
+                    <li class="nav-link"><a class="nav-link-link" href="./index.html">
+                        <p class="nl">Home</p>
+                        <p class="en">Home</p>
+                    </a></li>
+                    <li class="nav-link"><a class="nav-link-link" href="./education.html">
+                        <p class="nl">Opleiding</p>
+                        <p class="en">Education</p>
+                    </a></li>
+                    <li class="nav-link"><a class="nav-link-link" href="./work.html">
+                        <p class="nl">Werk</p>
+                        <p class="en">Work</p>
+                    </a></li>
+                    <li class="nav-link"><a class="nav-link-link" href="./music.html">
+                        <p class="nl">Muziek</p>
+                        <p class="en">Music</p>
+                    </a></li>
+                    <li class="nav-link"><a class="nav-link-link" href="./contact.html">
+                        <p class="nl">Contact</p>
+                        <p class="en">Contact</p>
+                    </a></li>
+                    <li class="nav-link" onclick="cycleLanguage()" style="cursor: pointer;">
+                        <p class="nl">NL</p>
+                        <p class="en">EN</p>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <h1>Opleiding</h1>
+            <h1 class="nl">Opleiding</h1>
+            <h1 class="en">Education</h1>
+
             <div class="section">
                 <div class="block">
                     <a href="www.vu.nl"><img class="logo" src="resources/images/vu.png" ></a>
                     <a href="www.uva.nl"><img class="logo" src="resources/images/uva_logo.jpg" ></a>
-                    <div class="job"><p>Master of Science: Computer Science, track Foundations of Computing and Concurrency</p></div>
-                    <div class="company"><p>Vrije Universiteit Amsterdam</p></div>
-                    <div class="company"><p>Universiteit van Amsterdam</p></div>
-                    <div class="period"><p>Sept. 2018 - now</p></div>
+                    <div class="education">
+                        <p class="nl">Master of Science: Computer Science, richting Foundations of Computing and Comcurrency</p>
+                        <p class="en">Master of Science: Computer Science, track Foundations of Computing and Concurrency</p>
+                    </div>
+                    <div class="school">
+                        <p class="nl">Vrije Universiteit Amsterdam en Universiteit van Amsterdam</p>
+                        <p class="en">VU Amsterdam and University of Amsterdam</p>
+                    </div>
+                    <div class="period">
+                        <p class="nl">Sept. 2018 - nu</p>
+                        <p class="en">Sept. 2018 - now</p>
+                    </div>
                 </div>
                 <div class="block">
                     <a href="www.uu.nl"><img class="logo" src="resources/images/UU_logo_NL_CMYK.png" ></a>
-                    <div class="job"><p>Bachelor of Science: Informatica, track Gametechnologie</p></div>
-                    <div class="company"><p>Universiteit Utrecht</p></div>
-                    <div class="period"><p>Sept. 2015 - Juni 2018</p></div>
+                    <div class="education">
+                        <p class="nl">Bachelor of Science: Informatica, richting Gametechnologie</p>
+                        <p class="en">Bachelor of Science: Computer Science, track Gametechnology</p>
+                    </div>
+                    <div class="school">
+                        <p class="nl">Universiteit Utrecht</p>
+                        <p class="en">University of Utrecht</p>
+                    </div>
+                    <div class="period">
+                        <p class="nl">Sept. 2015 - Juni 2018</p>
+                        <p class="en">Sept. 2015 - June 2018</p>
+                    </div>
                 </div>
                 <div class="block">
                     <a href="www.werenfridus.nl"><img class="logo" src="resources/images/werenfridus.png"></a>
-                    <div class="job"><p>Atheneum</p></div>
-                    <div class="company"><p>Werenfridus</p></div>
-                    <div class="period"><p>Sept. 2012 - Juni 2015</p></div>
+                    <div class="education">
+                        <p class="nl">Atheneum, profiel Natuur en Gezondheid & Natuur en Techniek (NG & NT)</p>
+                        <p class="en">Atheneum, profile Nature and Health & Nature and Technology (NG & NT)</p>
+                    </div>
+                    <div class="school">
+                        <p class="nl">Werenfridus</p>
+                        <p class="en">Werenfridus</p>
+                    </div>
+                    <div class="period">
+                        <p class="nl">Sept. 2012 - Juni 2015</p>
+                        <p class="en">Sept. 2012 - June 2015</p>
+                    </div>
                 </div>                
             </div>
         </main>
