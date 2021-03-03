@@ -135,15 +135,53 @@ div.section {
 div.block {
     text-align: center;
     width: 70%;
+    display: block;
+    margin: auto;
+    padding-bottom: 3vh;
 }
 
 /* Item */
 div.item {
     background-color: aquamarine;
-    display: inline-block;
-    padding: 30px;
-    width: 100px;
-    
+    display: block;
+    width: 80%;
+}
+
+
+
+div.item:hover {
+    background-color: gray;
+}
+
+
+/******************** Contact *********************/
+
+div.musicblock {
+    display: block;
+    padding-bottom: 1cm;
+    margin-bottom: 1cm;
+}
+
+img.logo {
+    /* display: block; */
+    width: 10vw;
+}
+
+div.instrument {
+    text-align: left;
+}
+
+div.teacher {
+    text-align: left;
+}
+
+div.orchestra {
+    text-align: left;
+}
+
+div.period {
+    font-style: italic;
+    text-align: left;
 }
 
 
