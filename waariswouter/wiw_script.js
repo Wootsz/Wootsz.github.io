@@ -62,6 +62,8 @@ var all_levels = [
 ]
 
 function complete_level() {
+    document.getElementById("picture").style.display = "block";
+    document.getElementById("check").style.display = "none";
     if (level_index >= all_levels.length - 1) {
         document.location.href = "waariswouterfinallevel.html";
     } else {
@@ -86,20 +88,28 @@ function checkClickLocation(event) {
     switch(current_shape) {
         case rectangle: 
             if (isInRectangle(x, y, current_coordinates)) {
-                complete_level();
+                correctClick();
             } else {
                 removeLife();
             }
             break;
         case triangle:
             if (isInTriangle(x, y, current_coordinates)) {
-                complete_level();
+                correctClick();
             } else {
                 removeLife();
             }
             break;
         default:
     }
+}
+
+/** Function executed immediately after a correct click;
+ *  Displays a checkmark, then waits 0.5 seconds to go to the next level */ 
+function correctClick() {
+    document.getElementById("check").style.display = "block";
+    document.getElementById("picture").style.display = "none";
+    window.setTimeout(complete_level, 500);
 }
 
 function isInRectangle(x, y, rect) {
