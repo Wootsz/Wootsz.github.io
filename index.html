@@ -2,55 +2,55 @@
 <html>
     <head>
         <title>Wouter Brozius</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="./js/scripts.js"></script>
+        <link rel="stylesheet" href="resources/css/style.css">
+        <script src="./resources/js/scripts.js"></script>
     </head>
     <body>
-        <header id="myheader">
+        <header id="header" onclick="switchNav()">
             <link rel="icon" href="/favicon.ico">
-            <nav>
-                <ul class="nav-links">
-                    <li class="nav-link"><a class="nav-link-link" href="./index.html">
-                        <p class="nl">Home</p>
-                        <p class="en">Home</p>
-                    </a></li>
-                    <li class="nav-link"><a class="nav-link-link" href="./education.html">
-                        <p class="nl">Opleiding</p>
-                        <p class="en">Education</p>
-                    </a></li>
-                    <li class="nav-link"><a class="nav-link-link" href="./work.html">
-                        <p class="nl">Werk</p>
-                        <p class="en">Work</p>
-                    </a></li>
-                    <li class="nav-link"><a class="nav-link-link" href="./music.html">
-                        <p class="nl">Muziek</p>
-                        <p class="en">Music</p>
-                    </a></li>
-                    <li class="nav-link"><a class="nav-link-link" href="./contact.html">
-                        <p class="nl">Contact</p>
-                        <p class="en">Contact</p>
-                    </a></li>
-                    <li class="nav-link" onclick="cycleLanguage()" style="cursor: pointer;">
-                        <p class="nl">NL</p>
-                        <p class="en">EN</p>
-                    </li>
-                </ul>
-            </nav>
+            <span id="sidenav-button">&#9776;</span>
+            <h1 id="page-title">Home</h1>
         </header>
 
-        <main>
-            <h1 class="nl">Home</h1>
-            <h1 class="en">Home</h1>
-
-            <div class="mainbox">
-                <p class="nl">Website van Wouter Brozius</p>
-                <p class="en">Website of Wouter Brozius</p>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="nav-link-link" href="./index.html">
+                <p>Home</p>
+            </a>
+            <a class="nav-link-link" href="./ict.html">
+                <p>ICT</p>
+            </a>
+            <a class="nav-link-link" href="./muziek.html">
+                <p>Muziek</p>
+            </a>
+        </div>
+        
+        <main id="main">
+            <div class="section">
+                <h2 class="section-title">Wie is Wouter?</h2>
+                <p>Website van Wouter Brozius</p>
             </div>
 
-        </main>
+            <div class="section">
+                <a href="./waariswouter.html"><h2 class="section-title">Waar is Wouter?</h2></a>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Contact</h2>
+            
+                <div class="block">
+                    <h3 class="block-title">Sociale Media</h3>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <div class="sub-block">
+                        <a href="https://www.facebook.com/wouter.brozius" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/wouter._/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/wouter-brozius-705521118/" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
 
-        <footer>
-            Copyright © Wouter Brozius, 2020
-        </footer>
+            <p style="padding:50cm"> AA</p>
+
+        </main>
     </body>
 </html>
