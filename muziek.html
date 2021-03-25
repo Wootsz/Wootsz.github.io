@@ -1,95 +1,171 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Wouter Brozius</title>
-        <link rel="stylesheet" href="resources/css/style.css">
-        <script src="./resources/js/scripts.js"></script>
-    </head>
-    <body>
-        <header id="header">
-            <link rel="icon" href="/favicon.ico">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </header>
+<html lang="nl">
+    <title>Wouter Brozius</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+        .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+        .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="nav-link-link" href="./index.html">
-                <p>Home</p>
-            </a>
-            <a class="nav-link-link" href="./ict.html">
-                <p>ICT</p>
-            </a>
-            <a class="nav-link-link" href="./muziek.html">
-                <p>Muziek</p>
-            </a>
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+                <a href="ict.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ICT</a>
+                <a href="muziek.html" class="w3-bar-item w3-button w3-padding-large w3-white">Muziek</a>
+            </div>
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+                <a href="ict.html" class="w3-bar-item w3-button w3-padding-large">ICT</a>
+            </div>
         </div>
 
-        <main id="main">
-            <h1 id="title">Muziek</h1>
-            
-            <div class="section">
-                <h2 class="section-title">Les</h2>
-                <div class="block">
-                    <a href="https://muziekschoolboedijn.nl/"><img class="logo" src="resources/images/boedijn.png" ></a>
-                    <p class="instrument">Instrument: Slagwerk</p>
-                    <p class="teacher">Docent: Glenn Liebaut</p>
-                    <p class="orchestra">Organisastie: Muziekschool Gerard Boedijn</p>
-                    <p class="period">Sept. 2018 - nu</p>
-                </div>
-                <div class="block">
-                    <a href="https://www.hoornsebrassband.nl/"><img class="logo" src="resources/images/hbb.png"></a>
-                    <p class="instrument">Instrument: Slagwerk</p>
-                    <p class="teacher">Docent: Erwin ter Bogt</p>
-                    <p class="orchestra">Organisastie: Hoornse Brassband</p>
-                    <p class="period">Maart 2010 - Juli 2016</p>
-                </div>
-            </div>
+        <!-- Header -->
+        <header class="w3-container w3-green w3-center" style="padding:128px 16px">
+            <h1 class="w3-margin w3-jumbo">Muziek</h1>
+            <p class="w3-xlarge">Wouter Brozius</p>
+            <link rel="icon" href="/favicon.ico">
+        </header>
 
-            <div class="section">
-                <h2 class="section-title">Orkesten</h2>
-                <div class="block">
-                    <a href="https://www.hoornsebrassband.nl/"><img class="logo" src="resources/images/hbb.png" ></a>
-                    <p class="orchestra">Hoornse Brassband</p>
-                    <p class="period">Sept. 2014 - nu</p>
+        <!-- First Grid -->
+        <div class="w3-container w3-black w3-center w3-padding-64">
+            <h1>Muziek lessen</h1>
+        </div>
+        <div class="w3-row-padding w3-dark-gray w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-twothird">
+                    <h5 class="w3-padding-32">September 2018 - nu</h5>
+                    <p class="w3-text-white">Les op slagwerk (voornamelijk marimba) van Glenn Liebaut op de Muziekschool Gerard Boedijn.</p>
                 </div>
-                <div class="block">
-                    <a href="https://bbknk.nl/"><img class="logo" src="resources/images/knk.png" ></a>
-                    <p class="orchestra">Brassband Kunst naar Kracht</p>
-                    <p class="period">Jan. 2020 - nu</p>
-                </div>
-                <div class="block">
-                    <a href="https://www.njfo.nl/"><img class="logo" src="resources/images/njfo.png" ></a>
-                    <p class="orchestra">Nationaal Jeugd Fanfare Orkest (NJFO)</p>
-                    <p class="period">Sept. 2020 - nu</p>
-                </div>
-                <div class="block">
-                    <a href="https://nhjfo.nl/"><img class="logo" src="resources/images/nhjfo.png" ></a>
-                    <p class="orchestra">Noord-Hollands Jeugd Fanfare Orkest (NHJFO)</p>
-                    <p class="period">Sept. 2018 - Jan. 2020</p>
+                <div class="w3-third w3-center">
+                    <a href="https://muziekschoolboedijn.nl/"><img class="w3-image" src="resources/images/boedijn.png" style="border-radius: 50%;"></a>
                 </div>
             </div>
-            
-            <div class="section">
-                <h2 class="section-title">Projecten</h2>
-                <div class="block">
-                    <a href="https://muziekschoolboedijn.nl/percussie-zomerweek/"><img class="logo" src="resources/images/boedijn.png"></a>
-                    <p class="orchestra">Boedijn Percussie Zomerweek</p>
-                    <p class="period">Zomer 2020</p>
+            <div class="w3-content" style="margin-top: 20em;">
+                <div class="w3-third w3-center">
+                    <a href="https://www.hoornsebrassband.nl/"><img class="w3-image" src="resources/images/hbb.png" style="border-radius: 50%; margin-right: 3em;"></a>
                 </div>
-                <div class="block">
-                    <a href="https://www.zomerorkest.nl/"><img class="logo" src="resources/images/zon.jpg"></a>
-                    <p class="orchestra">ZomerOrkest Nederland</p>
-                    <p class="period">Zomer 2018</p>
+                <div style="padding-left: 5em;" class="w3-twothird">
+                    <h5 class="w3-padding-32">Maart 2010 - Juli 2016</h5>
+                    <p class="w3-text-white">Les op snare drum, klokkenspel en pauken van Erwin ter Bogt via de Hoornse Brassband.</p>
                 </div>
             </div>
+        </div>
 
-            <div class="section">
-                <h2 class="section-title">Muziek</h2>
-                <div class="block">
-                    <iframe width="90%" height="700" src="https://musescore.com/user/31524921/scores/6677442/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-                    <span><a href="https://musescore.com/user/31524921/scores/6677442/s/piJlw-" target="_blank">Sneakin' Salamander</a> by <a href="https://musescore.com/user/31524921">woutrsz1</a></span>
+        <!-- Second Grid -->
+        <div class="w3-container w3-black w3-center w3-padding-64">
+            <h1>Orkesten</h1>
+        </div>
+        <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-twothird">
+                    <h5 class="w3-padding-32">September 2014 - nu</h5>
+                    <p class="w3-text-grey">Slagwerker bij de Hoornse Brassband, te Hoorn, o.l.v. Erwin ter Bogt (tot 2016) en Gertjan Loot (2016-nu).</p>
+                </div>
+                <div class="w3-third w3-center">
+                    <a href="https://www.hoornsebrassband.nl/"><img class="w3-image" src="resources/images/hbb.png" style="border-radius: 50%; margin-right: 3em;"></a>
                 </div>
             </div>
-        </main>
+            <div class="w3-content" style="margin-top: 20em;">
+                <div class="w3-third w3-center">
+                    <a href="https://bbknk.nl/"><img class="w3-image" src="resources/images/knk.png" style="border-radius: 50%; margin-right: 3em;"></a>
+                </div>
+                <div style="padding-left: 5em;" class="w3-twothird">
+                    <h5 class="w3-padding-32">Januari 2020 - nu</h5>
+                    <p class="w3-text-grey">Slagwerker bij Brassband Kunst naar Kracht, de Goorn, o.l.v. Pieter Koster.</p>
+                </div>
+            </div>
+            <div class="w3-content" style="padding-top: 20em;">
+                <div class="w3-twothird">
+                    <h5 class="w3-padding-32">September 2020 - nu</h5>
+                    <p class="w3-text-grey">Slagwerker bij het Nationaal Jeugd Fanfare Orkest (NJFO), o.l.v. Danny Oosterman.</p>
+                </div>
+                <div class="w3-third w3-center">
+                    <a href="https://www.njfo.nl/"><img class="w3-image" src="resources/images/njfo.png" style="border-radius: 50%; margin-right: 3em;"></a>
+                </div>
+            </div>
+            <div class="w3-content" style="margin-top: 20em;">
+                <div class="w3-third w3-center">
+                    <a href="https://nhjfo.nl/"><img class="w3-image" src="resources/images/nhjfo.png" style="border-radius: 50%; margin-right: 3em;"></a>
+                </div>
+                <div style="padding-left: 5em;" class="w3-twothird">
+                    <h5 class="w3-padding-32">September 2018 - Januari 2020</h5>
+                    <p class="w3-text-grey">Slagwerker bij het Noord-Hollands Jeugd Fanfare Orkest (NHJFO), o.l.v. Lieuwe de Jong.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Grid -->
+        <div class="w3-container w3-black w3-center w3-padding-64">
+            <h1>Projecten</h1>
+        </div>
+        <div class="w3-row-padding w3-dark-gray w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-twothird">
+                    <h5 class="w3-padding-32">Zomer 2020</h5>
+                    <p class="w3-text-white">Mee gedaan met de Boedijn Percussie Zomerweek.</p>
+                </div>
+                <div class="w3-third w3-center">
+                    <a href="https://muziekschoolboedijn.nl/percussie-zomerweek/"><img class="w3-image" src="resources/images/boedijn.png" style="border-radius: 50%;"></a>
+                </div>
+            </div>
+            <div class="w3-content" style="margin-top: 20em;">
+                <div class="w3-third w3-center">
+                    <a href="https://www.zomerorkest.nl/"><img class="w3-image" src="resources/images/zon.jpg" style="border-radius: 50%; margin-right: 3em;"></a>
+                </div>
+                <div style="padding-left: 5em;" class="w3-twothird">
+                    <h5 class="w3-padding-32">Zomer 2018</h5>
+                    <p class="w3-text-white">Mee gedaan op slagwerk bij Zomerorkest Nederland, dat jaar onder leiding van Paul van Gils en Vera Hofman.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Grid -->
+        <div class="w3-container w3-black w3-center w3-padding-64">
+            <h1>Etc</h1>
+        </div>
+        <div class="w3-row-padding w3-light-gray w3-padding-64 w3-container">
+            <div class="wc-center" style="margin: auto;">
+                <iframe class="w3-center" width="90%" height="700" src="https://musescore.com/user/31524921/scores/6677442/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+            </div>
+            <p class="w3-text-black">Grappig muziek stukje dat ik heb bedacht.</p>
+            <span><a href="https://musescore.com/user/31524921/scores/6677442/s/piJlw-" target="_blank">Sneakin' Salamander</a> by <a href="https://musescore.com/user/31524921">woutrsz1</a></span>
+        </div>
+
+        <div class="w3-container w3-black w3-center w3-padding-64"></div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-center w3-opacity"> 
+            <div class="w3-xlarge w3-padding-32">
+                <h4>Contact</h4>
+                <a href="https://www.facebook.com/wouter.brozius"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/wouter._/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/wouter-brozius-705521118/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+             </div>
+            <p>Copyright Wouter Brozius en <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>.</p>
+        </footer>
+
+        <script>
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+
     </body>
 </html>
