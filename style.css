@@ -2,3 +2,11 @@
 body {
   font-size: 2em;
 }
+
+li {
+  padding-bottom: 1em;
+}
+
+ul {
+  padding-bottom: 2em;
+}
